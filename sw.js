@@ -1,4 +1,4 @@
-const CACHE = "cookie-quintal-v1";
+const CACHE = "cookie-quintal-v2";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png", "./three.module.min.js", "./baloo2-latin.woff2", "./baloo2-latin-ext.woff2"];
 self.addEventListener("install", (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", (e) => {
